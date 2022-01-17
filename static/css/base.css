@@ -10,7 +10,8 @@ body {
     font-family: 'Rubik', sans-serif !important;
 }
 
-#topnav {
+#topnav,
+.navbar {
     background-color: rgb(19, 18, 18);
 }
 
@@ -29,6 +30,10 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
 }
 
 .main-logo-link {
@@ -62,6 +67,10 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 /* -------------------------------- Media Queries */
