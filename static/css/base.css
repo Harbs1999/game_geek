@@ -6,8 +6,13 @@ body {
     background: url('/media/bg-img.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #000;
     font-family: 'Rubik', sans-serif !important;
+}
+
+hr {
+    border: dashed 1px rgb(55, 55, 56);
+    margin-top: 3rem;
 }
 
 #topnav,
@@ -71,6 +76,16 @@ body {
 
 .bg-black {
     background: #000 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #555;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
