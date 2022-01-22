@@ -8,19 +8,19 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=xbox,playstation,nintendo,clothing,accessories" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="games-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Games
+                Games/Consoles
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="games-link">
-                <a href="" class="dropdown-item">Xbox</a>
-                <a href="" class="dropdown-item">PlayStation</a>
-                <a href="" class="dropdown-item">Nintendo</a>
-                <a href="" class="dropdown-item">All Games</a>
+                <a href="{% url 'products' %}?category=xbox" class="dropdown-item">Xbox</a>
+                <a href="{% url 'products' %}?category=playstation" class="dropdown-item">PlayStation</a>
+                <a href="{% url 'products' %}?category=nintendo" class="dropdown-item">Nintendo</a>
+                <a href="{% url 'products' %}?category=xbox,playstation,nintendo" class="dropdown-item">All Games/Consoles</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item">Clothing</a>
-                <a href="" class="dropdown-item">Gaming Accessories</a>
-                <a href="" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=clothing" class="dropdown-item">Clothing</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Gaming Accessories</a>
+                <a href="{% url 'products' %}?category=clothing,accessories" class="dropdown-item">All Accessories</a>
             </div>
         </li>
 
@@ -40,9 +40,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Games</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_games" class="dropdown-item">New Games</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=new_games,deals" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
