@@ -78,6 +78,17 @@ hr {
     background: #000 !important;
 }
 
+a.category-badge > span.badge {
+    background-color: white !important;
+    color: #000 !important;
+    border-width: 2px !important;
+}
+
+a.category-badge > span.badge:hover {
+    background-color: #555 !important;
+    color: #000 !important;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
