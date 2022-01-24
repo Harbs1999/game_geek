@@ -99,6 +99,25 @@ a.category-badge > span.badge:hover {
     z-index: -1;
 }
 
+.btt-button {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    bottom: 40px;
+    right: 1.2rem;
+    border-width: 2px !important;
+    background: rgba(19, 79, 245, 0.979);
+}
+
+.btt-button:hover {
+    background: rgba(19, 79, 245, 0.979);
+    opacity: 50%;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
