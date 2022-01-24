@@ -79,7 +79,7 @@ hr {
 }
 
 a.category-badge > span.badge {
-    background-color: white !important;
+    background-color: rgb(206, 13, 13) !important;
     color: #000 !important;
     border-width: 2px !important;
 }
