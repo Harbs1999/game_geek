@@ -20,12 +20,12 @@ hr {
     background-color: rgb(19, 18, 18);
 }
 
-.logo-1 {
-    color: rgba(19, 79, 245, 0.979);
+.text-red {
+    color: rgba(194, 8, 8, 0.979);
 }
 
-.logo-2 {
-    color: rgba(194, 8, 8, 0.979);
+.text-blue {
+    color: rgba(19, 79, 245, 0.979);
 }
 
 /* from Bulma */
