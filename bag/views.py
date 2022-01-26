@@ -60,7 +60,8 @@ def adjust_bag(request, item_id):
     return redirect(reverse('view_bag'))
 
 def remove_from_bag(request, item_id):
-    """ Remove item from shopping bag """
+    """Remove the item from the shopping bag"""
+
     try:
         size = None
         if 'product_size' in request.POST:
@@ -68,14 +69,15 @@ def remove_from_bag(request, item_id):
         bag = request.session.get('bag', {})
 
         if size:
-            if quantity > 0:
-                del bag[item_id]['items_by_size'][size]
-                if not bag[item_id]['items_by_size']:
-                    bag.pop(item_id)
+            del bag[item_id]['items_by_size'][size]
+            if not bag[item_id]['items_by_size']:
+                bag.pop(item_id)
         else:
             bag.pop(item_id)
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
+
     except Exception as e:
         return HttpResponse(status=500)
+        
