@@ -21,11 +21,11 @@ hr {
 }
 
 .text-red {
-    color: rgba(194, 8, 8, 0.979);
+    color: rgba(194, 8, 8, 0.979) !important;
 }
 
 .text-blue {
-    color: rgba(19, 79, 245, 0.979);
+    color: rgba(19, 79, 245, 0.979) !important;
 }
 
 /* from Bulma */
@@ -126,7 +126,9 @@ a.category-badge > span.badge:hover {
     opacity: 50%;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
