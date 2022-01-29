@@ -19,13 +19,13 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h1 class="logo-font mb-4">My Profile</h1>
+                <h1 class="logo-font mb-4 text-center">My Profile</h1>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-6">
-                <p>Default Delivery Information:</p>
+                <p class="text-black"><strong>Default Delivery Information:</strong></p>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
@@ -53,8 +53,8 @@
                                             {{ order.order_number|truncatechars:6 }}
                                         </a>
                                     </td>
-                                    <td>{{ order.date }}</td>
-                                    <td>
+                                    <td class="text-black">{{ order.date }}</td>
+                                    <td class="text-black">
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}
                                                 <li class="small">
@@ -65,7 +65,7 @@
                                             {% endfor %}
                                         </ul>
                                     </td>
-                                    <td>${{ order.grand_total }}</td>
+                                    <td class="text-black">${{ order.grand_total }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>
