@@ -15,6 +15,16 @@ hr {
     margin-top: 3rem;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #9a98a0;
+    z-index: -1;
+}
+
 #topnav,
 .navbar {
     background-color: rgb(19, 18, 18);
@@ -102,15 +112,7 @@ a.category-badge > span.badge:hover {
     color: #000 !important;
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #555;
-    z-index: -1;
-}
+
 
 .btt-button {
     height: 80px;
