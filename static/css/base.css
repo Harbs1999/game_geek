@@ -38,10 +38,6 @@ hr {
     color: rgba(19, 79, 245, 0.979) !important;
 }
 
-#search {
-    color: white !important;
-}
-
 /* from Bulma */
 .icon {
     align-items: center;
